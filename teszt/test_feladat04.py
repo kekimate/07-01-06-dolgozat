@@ -14,9 +14,9 @@ class TestJelesTanulok(TestCase):
         elvart = []
         self.assertEqual(elvart, aktualis, "Rosszul határozta meg a jeles tanulók listáját")
     def test_feladat_ures(self):
-        atlagok=[4.6,3.5,5.0,3.5,3.1]
+        atlagok=[5,4,5,3,5]
         tanulok=["Kis János", "Nagy Imre", "Arany Piri", "Péter János", "Vég Antal"]
         aktualis = feladatok.jeles_tanulok(atlagok,tanulok)
-        elvart = ["Kis János","Arany Piri"]
+        elvart = ["Kis János","Arany Piri","Vég Antal"]
         self.assertEqual(elvart, aktualis, "Rosszul határozta meg a jeles tanulók listáját")
 
